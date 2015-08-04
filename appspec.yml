@@ -25,8 +25,7 @@ hooks:
   # file permissions.
   #
   AfterInstall:
-    - location: scripts/changeperms.sh
-      timeout: 180
+    - location: scripts/changeperms.shtimeout: 180
 
     - location: scripts/copysettings.sh
       timeout: 120
