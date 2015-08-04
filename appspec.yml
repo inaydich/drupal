@@ -25,14 +25,15 @@ hooks:
   # file permissions.
   #
   AfterInstall:
-    - location: scripts/changeperms.shtimeout: 180
+    - location: scripts/changeperms.sh
+      timeout: 180
 
     - location: scripts/copysettings.sh
       timeout: 120
 	  
-	- location: scripts/install_new_relic.sh
-	  timeout: 180
-	  runas: root  
+    - location: scripts/install_new_relic.sh
+      timeout: 180
+      runas: root  
 
   #
   # ApplicationStart - you typically use the ApplicationStart
